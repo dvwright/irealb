@@ -2,10 +2,11 @@
 
 iRealb is a MuseScore Plugin.  
 
-This plugin attempts to convert a MuseScore XML file
+This plugin attempts to convert a MuseScore MusicXML file
 into a iRealb chart.
 
 {MuseScore}[http://musescore.org] is a high quality Open Source Music Score Editor.
+
 {iRealb}[http://www.irealb.com/] is a very cool smartphone app for musicians.
 
 
@@ -38,7 +39,8 @@ Version 1
 
 == FEATURES:
 
-* converts a MuseScore Chart (exported as a MuseScore XML file) 
+* converts a MuseScore Chart (exported as a MuseScore MusicXML file) 
+
   into a irealb chart, that you can import into you smartphone ireal app. 
 
 NOTE: It does not convert every (any ;) chart totally accurately.

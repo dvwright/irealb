@@ -8,7 +8,7 @@
 //  NOTE: Tested against MuseScore 1.1 only!
 //
 //  What:
-//        This plugin attempts to convert a MuseScore XML file
+//        This plugin attempts to convert a MuseScore MusicXML file
 //        into a iRealb chart.
 //  How:
 //        1.  Open MuseScore
@@ -327,7 +327,7 @@ function get_chords_in_measure(element) {
       if (chord) {
         chord = convert_to_irealb_chord(chord);
 
-        // MuseXML format, will have the same chord consecutively in a
+        // MusicXML format, will have the same chord consecutively in a
         // measure, why?!  // 'display hack'
         if (prev_chord == chord) {
           // let's remove the first entry of the chord and keep the second
