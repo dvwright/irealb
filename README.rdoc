@@ -12,8 +12,7 @@ into a iRealb chart.
 
 == VERSION:
 
-Version 1 
-  (Not sure how the MuseScore plugin versioning works, just start at '1')
+Version 0.1
 
 
 == SYNOPSIS:

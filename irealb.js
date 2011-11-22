@@ -4,6 +4,7 @@
 //  MuseScore - Open Source Music Score Editor
 //  Plugin: iRealb
 //  Author: David Wright <david_v_wright@yahoo.com>
+//  Version: Version 0.1 // Mon Nov 21 22:43:51 PST 2011
 //
 //  NOTE: Tested against MuseScore 1.1 only!
 //
@@ -461,6 +462,7 @@ function msg_box(s) {
 
 //////////////////////////////////
 
+// can these version numbers be '0.1'?
 var mscorePlugin = {
   majorVersion: 1,
   minorVersion: 1,
