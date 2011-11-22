@@ -1,0 +1,163 @@
+= iRealb
+
+iRealb is a MuseScore Plugin.  
+
+This plugin attempts to convert a MuseScore XML file
+into a iRealb chart.
+
+{MuseScore}[http://musescore.org] is a high quality Open Source Music Score Editor.
+{iRealb}[http://www.irealb.com/] is a very cool smartphone app for musicians.
+
+
+== VERSION:
+
+Version 1 
+  (Not sure how the MuseScore plugin versioning works, just start at '1')
+
+
+== SYNOPSIS:
+
+1.  Open MuseScore
+2.  Create a regular MuseScore chart
+3.  Save your MuseScore chart as a MusicXML file.
+4.  Go to Plugins -> iRealb
+5.  Select the XML file of you chart.
+6.  'Select All' -> Copy the URI from the Text Dialog window. 
+    (NOTE: the text dialog window is editable, which is handy for
+           quick edits/changes once you get familiar with the 
+           iRealb syntax.)
+7.  Open a Web Browser and navigate to http://www.irealb.com/editor/
+8.  Paste the URI from above in the textarea titled:
+    'IMPORT - Paste a song/playlist code here:'
+9.  Click 'Import'
+10. Compare the Web Editor results with your MuseScore Chart
+11. Make the corrections needed via the iRealb Web Editor
+    (there will probably be many ;) 
+12. Export your song (Email, etc) from the iRealb Web Editor
+    to get it on your iRealb app.
+
+== FEATURES:
+
+* converts a MuseScore Chart (exported as a MuseScore XML file) 
+  into a irealb chart, that you can import into you smartphone ireal app. 
+
+NOTE: It does not convert every (any ;) chart totally accurately.
+      It does often get many of the chords and form correct.
+      usually, at the worst, it can save you time creating
+      your chart via the Web Editor.
+
+== REQUIREMENTS:
+
+MuseScore must be installed.
+
+NOTE: Tested against MuseScore 1.1 only!
+
+== INSTALL:
+
+1. Download the plugin by right clicking the link and save target as.
+2. Uncompress the file (Unzip)
+3. Place the unzipped dir, 'irealb' into the plugins directory of 
+   MuseScore.
+
+    Windows: 
+             C:\Program Files\MuseScore\plugins
+
+    Linux (Ubuntu): 
+             /usr/share/mscore-{VERSION}/plugins
+             i.e. /usr/share/mscore-1.1/plugins
+
+    MacOSX: not sure
+
+4. Restart or start MuseScore
+
+
+== OVERVIEW:
+
+
+* {Other MuseScore Plugins}[http://musescore.org/en/plugins]
+
+
+== DIAGNOSTICS
+
+* Errors: 
+  No errors expected
+
+* Exceptions: 
+  No exceptions expected
+
+== CONFIGURATION AND ENVIRONMENT:
+
+* If you install MuseScore to a non-standard location,
+  you will have to find the plugin directory.
+
+== TESTS:
+
+* TODO: figure out QTScript unit tests ? (or MuseScore Plugin unit tests)
+
+== DEPENDENCIES:
+
+  MuseScore, version 1.1 Must be installed
+
+== INCOMPATIBILITIES:
+
+This plugin may or may not work on versions != 1.1 
+
+
+== BUGS AND LIMITATIONS:
+
+Many bugs, this works incorrectly more often than correctly.
+
+This library currently provides only very basic conversion operations.
+
+I would prefer to use the Plugin API but currently getting chords
+from a Harmony object is not possible. The approach this plugin uses
+just parses XML for node elements. 
+ref see: http://musescore.org/en/node/12727
+
+
+== SUPPORT:
+
+good luck! -haha
+
+Please let the author know any bugs, this release has recieved limited
+testing. (Do to lack of different types of lead sheets)
+
+David Wright (david_v_wright@yahoo.com)
+
+
+== CHANGELOG:
+
+* initial release
+
+== LICENSE AND COPYRIGHT:
+
+Copyright 2011 David Wright (david_v_wright@yahoo.com), all rights reserved.
+
+released under the GPL license.
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 2.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+== AUTHOR:
+
+Author:: {David Wright}[http://www.dwright.us/] <david_v_wright@yahoo.com>
+
+== ACKNOWLEDGEMENTS:
+
+Thanks to 'JazzClub' for the XML2Impro-Visor.js plugin
+
+This code contains ideas and code from XML2Impro-Visor.js
+
+Also Thanks to Marc Sabatella, who's articles on
+'New Jazz / Lead Sheet Features in MuseScore 1.1' got me interested
+in MuseScore to begin with.
+
